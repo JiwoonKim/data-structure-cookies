@@ -100,6 +100,7 @@ public:
         for (int i = 0; i < size; i++) {
             tempArr[i] = arr[i];
         }
+        arr = tempArr;
     }
 
     // return the number of items in the array
