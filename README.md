@@ -6,7 +6,7 @@
 
 ## 1. Arrays
 https://www.geeksforgeeks.org/array-data-structure/#order
-1. `Implement a vector (mutable array with automatic resizing)`
+1. `dynamic array class`
 2. `array rotation`
 3. `rearrangement`
 

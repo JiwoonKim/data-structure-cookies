@@ -1,7 +1,8 @@
 /**
- *  Rotate an array
+ *  Given an array, rotate the array to the right by k steps.
+ *  (k is non-negative)
  * 
- *  * Dynamic Array
+ *  * 
  *    : 
  * 
  *  ** What I learned
