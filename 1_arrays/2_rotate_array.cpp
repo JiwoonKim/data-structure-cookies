@@ -27,7 +27,11 @@
  *        => use PREV & TEMP
  * 
  *     2) shifting RIGHT <-> LEFT
- *        - 
+ *        - RIGHT: last k items come to front
+ * 
+ *        - LEFT: front k items come to last
+ * 
+ *        => 계속 틀리는 부분이니 조심할 것!
  * 
  */
 
@@ -61,8 +65,41 @@ void rotate(vector<int>& nums, int k) {
     }
 
 /**
- *  (2) 
+ *  (2) use extra array: O(n) time, O(n) space
  */
 void rotate(vector<int>& nums, int k) {
     
+    // create extra array to store 
+    vector<int> rotated;
+        
+    /** recalculate k (relative to the array size)
+     *  to prevent errors in indexing
+    */ 
+    k = k % nums.size();
+
+    // put last k items into beginning of array
+    rotated.insert(rotated.begin(), nums.begin() + nums.size() - k, nums.end());
+
+    // put remaining items into end of array
+    rotated.insert(rotated.begin() + rotated.size(), nums.begin(), nums.begin() + nums.size() - k);
+        
+    // reassign array
+    nums = rotated;
 }
+
+/**
+ *  (3) 
+ */
+void rotate(vector<int>& nums, int k) {
+
+}
+
+/**
+ *  (4) use STL rotate function
+ */
+void rotate(vector<int>& nums, int k) {
+
+    // rotate to the left by (size - k)
+    rotate(nums.begin(), nums.begin() + nums.size() - k, nums.end());
+}
+    
