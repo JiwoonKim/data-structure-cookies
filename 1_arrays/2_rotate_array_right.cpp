@@ -10,8 +10,23 @@
  *    (2) use extra array: O(n) time, O(n) space
  *        -> store rotated version and copy that into original array
  * 
- *    (3) 
+ *    (3) cyclic replacement: O(n) time, O(1) space
+ *        -> direcly place every item in its rightfully rotated position + cycle checking
+ *        => use PREV + TEMP + use START (for checking cycles)
+ *        
+ *           - place item in rotated position while temporarily storing original item value
+ *             -> use as next item to store
+ *           - need to check for CYCLES
+ *             ex. {1, 2, 3, 4, 5, 6}, k = 2 와 같은 경우, 같은 item이 중복 저장될 수 있음 bcuz of cycle
+ *             => use START to store initial index to check for cycles 
  * 
+ *    (4) use reverse: O(n) time, O(1) space
+ *        -> reverse entire array and then reverse parts
+ *           (take advantage of helper functions: reverse & swap)
+ *           - first, reverse entire array
+ *           - then, reverse first k elements
+ *           - finally, reverse remaining elements
+ *        
  * 
  *  ** What I learned
  * 
@@ -97,26 +112,57 @@ void rotate(vector<int>& nums, int k) {
  */
 void rotate(vector<int>& nums, int k) {
 
-    int count = nums.size();
-
+    // curIndex = nums[0] value's rotated position
     int curIndex = k % nums.size();
     int startIndex = curIndex;
     int prevNum = nums[0];
 
+    // replace elements (nums.size() times)
+    int count = nums.size();
     while (count--)     {
 
+        /** put prev item in rotated position
+         *  (temporarily store original item to update prev later)
+        */
         int temp = nums[curIndex];
         nums[curIndex] = prevNum;
+
+        // update prev item value
         prevNum = temp;
 
+        // update index to next rotated position
         curIndex = (curIndex + k) % nums.size();
-        if (curIndex == startIndex)         {
-            curIndex = (curIndex + 1) % nums.size();
-            prevNum = nums[curIndex];
-            curIndex = (curIndex + k) % nums.size();
+
+        // if next position is cycle
+        if (curIndex == startIndex) {
+
+            // store next position's item in prev
+            prevNum = nums[(curIndex + 1) % nums.size()];
+
+            // update index to prev's new rotated position
+            curIndex = (curIndex + k + 1) % nums.size();
+
+            // update start for checking new cycle
             startIndex = curIndex;
         }
     }
+}
+
+/**
+ *  (4) use reverse: O(n) time, O(1) space
+ *      (use helper functions: reverse & swap)
+ */
+void rotate(vector<int>& nums, int k) {
+    k = k % nums.size();
+        
+    // reverse entire array
+    reverse(nums, 0, nums.size() - 1);
+        
+    // reverse array in range (0 - k]
+    reverse(nums, 0, k - 1);
+        
+    // reverse array in range (k - end)
+    reverse(nums, k, nums.size() - 1);
 }
 
 /**
