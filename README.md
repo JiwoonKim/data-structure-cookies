@@ -11,8 +11,9 @@
 https://www.geeksforgeeks.org/array-data-structure/#order
 1. `dynamic array class` (1-1. dynamic array)
 2. `shift array by one` (1-2. rotate array)
-3. `rotate array by k` (1-2. rotate array)
-4. `rearrangement`
+3. `cyclic replacement` (1-2. rotate array)
+4. `use reverse to rotate array by k` (1-2. rotate array)
+5. `rearrangement`
 
 #### 1.2 Strings
 
