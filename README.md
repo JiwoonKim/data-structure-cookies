@@ -1,5 +1,6 @@
 # data-structure-cookies
 > re-inventing the wheel w/ data structures
+
 > collection of common data structure problems
 
 ## Useful Mechanisms To Remember
