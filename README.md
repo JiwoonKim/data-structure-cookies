@@ -1,36 +1,39 @@
 # data-structure-cookies
-> re-inventing the wheel w/ data structure
+> re-inventing the wheel w/ data structures
 > collection of common data structure problems
 
-## 0. Complexities
+## Useful Mechanisms To Remember
+> list of useful mechanisms (functions) to remember
 
-## 1. Arrays
+### 0. Complexities
+
+### 1. Arrays
 https://www.geeksforgeeks.org/array-data-structure/#order
-1. `dynamic array class`
-2. `array rotation`
-3. `rearrangement`
+1. `dynamic array class` (1-1. dynamic array)
+2. `shift array by one` (1-2. rotate array)
+3. `rotate array by k` (1-2. rotate array)
+4. `rearrangement`
 
+#### 1.2 Strings
 
-### 1.2 Strings
+#### 1.3 Matrixes
 
-### 1.3 Matrixes
+### 2. Linked List
 
-## 2. Linked List
+### 3. Stack
 
-## 3. Stack
+### 4. Queue
 
-## 4. Queue
+### 5. Tree
 
-## 5. Tree
+#### 5.1 Binary Tree
 
-### 5.1 Binary Tree
+#### 5.2 Binary Search Tree (BST)
 
-### 5.2 Binary Search Tree (BST)
+#### 5.3 Heap
 
-### 5.3 Heap
+### 6. Graph
 
-## 6. Graph
-
-## 7. Hashing
+### 7. Hashing
 
 
