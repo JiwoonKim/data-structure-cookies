@@ -29,7 +29,7 @@ https://www.geeksforgeeks.org/array-data-structure/#order
 ### 5. Tree
 
 #### 5.1 Binary Tree
-1. (pre-order / in-order / post-order traversal)
+1. `check only current node for order traversal` (5.1-1. pre-order / in-order / post-order traversal)
 
 #### 5.2 Binary Search Tree (BST)
 
