@@ -1,9 +1,9 @@
-# :cookie: data-structure-cookies
+# data-structure-cookies :cookie:
 > re-inventing the wheel w/ data structures
 
 > collection of common data structure problems
 
-## Useful Mechanisms To Remember
+## :wrench: Useful Mechanisms To Remember
 > list of useful mechanisms (functions) to remember
 
 ### 1. Arrays
