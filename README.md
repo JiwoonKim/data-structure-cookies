@@ -29,7 +29,8 @@ https://www.geeksforgeeks.org/array-data-structure/#order
 
 #### + Binary Tree
 1. `check only current node for order traversal` (5-1-1. pre-order / in-order / post-order traversal)
-2. `use recursion to calculate height of binary tree` (5-1-2. height)
+2. `use recursion to calculate height of binary tree` (5-1-2. tree height)
+3. `check root or !root as base case` (5-1-1. order traversals & 5-1-2. tree height)
 
 #### + Binary Search Tree (BST)
 2. `use binary search mechanism to check if node exists in BST` (5-2-2. least common ancestor)

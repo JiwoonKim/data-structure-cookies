@@ -9,16 +9,24 @@
  * 
  *  ** What I learned
  *  
- *     * Don't have to check if left or right child node is null
- *       -> condition at beginning will check if child is null or not
- *          when called prOrder(root->left)
+ *     ** Don't have to check if left or right child node is null
+ *        -> condition at beginning will check if child is null or not
+ *           when called prOrder(root->left)
  * 
- *       => REMEMBER traversal 구조
- *          : if (root) {
- *              print current node's data
- *              order_function(root->left)
- *              order_function(root->right)
- *            }
+ *        => REMEMBER traversal 구조
+ *           : if (root) {
+ *               print current node's data
+ *               order_function(root->left)
+ *               order_function(root->right)
+ *             }
+ * 
+ *     ** Depth-first Search (DFS)
+ *        - preorder, inorder, postorder traversal == DFS
+ *        - DFS algorithm == specifically PREORDER traversal
+ * 
+ *     cf) Getting depth of node
+ *         - use BFS to mark each node in level order
+ *         - use DFS to mark each node (pass current depth in recursion)
  * 
  */
 
