@@ -19,7 +19,7 @@ https://www.geeksforgeeks.org/array-data-structure/#order
 #### + Matrixes
 
 ### 2. Linked List
-5. `how to use two runner for cycle detection` (2-5. cycle detection)
+5. `how to use two runner for cycle detection` (2-7. cycle detection)
 
 ### 3. Stack
 
@@ -28,13 +28,13 @@ https://www.geeksforgeeks.org/array-data-structure/#order
 ### 5. Tree
 
 #### + Binary Tree
-1. `check only current node for order traversal` (5-1-1. pre-order / in-order / post-order traversal)
-2. `use recursion to calculate height of binary tree` (5-1-2. tree height)
-3. `check root or !root as base case` (5-1-1. order traversals & 5-1-2. tree height)
+1. `check only current node for order traversal` (5(1)-2. pre-order / in-order / post-order traversal)
+2. `use recursion to calculate height of binary tree` (5(1)-3. tree height)
+3. `check root or !root as base case` (5(1)-2. order traversals & 5(1)-3. tree height)
 
 #### + Binary Search Tree (BST)
-2. `use binary search mechanism to check if node exists in BST` (5-2-2. least common ancestor)
-3. `use divide-and-conquer method to find Least Common Ancestor` (5-2-2. least common ancestor)
+2. `use binary search mechanism to check if node exists in BST` (5(2)-2. least common ancestor)
+3. `use divide-and-conquer method to find Least Common Ancestor` (5(2)-2. least common ancestor)
 
 #### + Heap
 
