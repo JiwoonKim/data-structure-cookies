@@ -4,11 +4,11 @@
  * 
  *  * Solutions
  * 
- *    (1) linear search: O(n)
+ *    (1) linear search: O(n) time, O(1) space
  *        (a) find point where (before > after; goes against increasing order)
  *        (b) find smallest value's index
  * 
- *    (2) binary search: O(log n)
+ *    (2) binary search: O(log n) time, O(1) space
  *        - use two pointer technique to keep a range
  *        1. FIRST check (v[start] < v[end]) -> no rotation or shift => return 0
  *        2. search for (v[mid] > v[mid + 1]); point which goes against ascending order)
