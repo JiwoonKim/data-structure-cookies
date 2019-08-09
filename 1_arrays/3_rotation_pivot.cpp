@@ -10,11 +10,11 @@
  * 
  *    (2) binary search: O(log n)
  *        - use two pointer technique to keep a range
- *        1. FIRST check (start < end) -> no rotation or shift => return 0
- *        2. search for (mid > mid + 1); point which goes against ascending order)
+ *        1. FIRST check (v[start] < v[end]) -> no rotation or shift => return 0
+ *        2. search for (v[mid] > v[mid + 1]); point which goes against ascending order)
  *          -> return (mid + 1) bcuz that is the smallest value (= shifted offset)
  *          -> cut the range into half by COMPARING START VALUE w/ MID VALUE: (start ~ mid-1) | (mid+1 ~ end)
- *             -> if start > mid: pivot point in left side (left side goes against ascending order)
+ *             -> if (v[start] > v[mid]): pivot point in left side (left side goes against ascending order)
  *                else: pivot point in right side (right side " )
  * 
  * 
@@ -27,10 +27,10 @@
  *     ** find offset == FIND SMALLEST VALUE'S INDEX
  * 
  *     ** BINARY SEARCH to find PIVOT
- *        - check if there is rotation at all: (start < end) => return 0
- *        - binary search to find (mid > mid+1) point => return (mid+1)
- *        - cut range in half by comparing (start > mid) => search left
- *                                         (start < mid) => search right
+ *        - check if there is rotation at all: (v[start] < v[end]) => return 0
+ *        - binary search to find (v[mid] > v[mid+1]) point => return (mid+1)
+ *        - cut range in half by comparing (v[start] > v[mid]) => search left
+ *                                         (v[start] < v[mid]) => search right
  *        cf) two pointer technique for ranging: while (start < end)
  *            => binary search when there are at least two elements
  * 
@@ -95,7 +95,7 @@ int findRightShift(vector<int> v) {
     int start = 0;
     int end = v.size() - 1;
 
-    if (start < end) {
+    if (v.size() <= 1 || v[start] < v[end]) {
         return 0;
     }
 
