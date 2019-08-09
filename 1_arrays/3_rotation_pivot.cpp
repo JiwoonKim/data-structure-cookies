@@ -12,8 +12,8 @@
  *        - use two pointer technique to keep a range
  *        1. FIRST check (v[start] < v[end]) -> no rotation or shift => return 0
  *        2. search for (v[mid] > v[mid + 1]); point which goes against ascending order)
- *          -> return (mid + 1) bcuz that is the smallest value (= shifted offset)
- *          -> cut the range into half by COMPARING START VALUE w/ MID VALUE: (start ~ mid-1) | (mid+1 ~ end)
+ *           -> return (mid + 1) bcuz that is the smallest value (= shifted offset)
+ *           -> cut the range into half by COMPARING START VALUE w/ MID VALUE: (start ~ mid-1) | (mid+1 ~ end)
  *             -> if (v[start] > v[mid]): pivot point in left side (left side goes against ascending order)
  *                else: pivot point in right side (right side " )
  * 

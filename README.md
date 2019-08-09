@@ -10,7 +10,7 @@
 https://www.geeksforgeeks.org/array-data-structure/#order
 1. `define dynamic array class` (1-1. dynamic array)
 2. `rotating array` (1-2. rotate array)
-    - `shift array by one by one`, `cyclic replacement in array`, `use reverse to rotate array by k`
+    - in-place: `shift array by one by one`, `cyclic replacement in array`, `use reverse to rotate array by k`
 3. `binary search for condition to find rotation point` (1-3. rotation pivot)
     - `rotation point == smallest value's index`
 4. `left shift: end -> begin | right shift: begin -> end` (1-2. rotate array & 1-3. rotation pivot)
