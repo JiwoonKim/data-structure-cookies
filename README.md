@@ -15,6 +15,7 @@ https://www.geeksforgeeks.org/array-data-structure/#order
     - `rotation point == smallest value's index`
 4. `left shift: end -> begin | right shift: begin -> end` (1-2. rotate array & 1-3. rotation pivot)
 5. `use two pointers for ranging` (1-3. rotation pivot & 1-4. reverse array)
+6. `one-pass hash table for fast lookup time` (1-6. find pair sum)
 
 #### + Strings
 
