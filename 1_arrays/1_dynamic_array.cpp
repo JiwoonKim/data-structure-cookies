@@ -44,7 +44,7 @@ private:
 
 public:
 
-    // constructor function
+    // constructor method
     DynamicArr(size_t capacity) {
         arr = new int[capacity];
         this->size = 0;

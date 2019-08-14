@@ -7,7 +7,6 @@
 > list of useful mechanisms (functions) to remember
 
 ### 1. Arrays
-https://www.geeksforgeeks.org/array-data-structure/#order
 1. `define dynamic array class` (1-1. dynamic array)
 2. `rotating array` (1-2. rotate array)
     - in-place: `shift array by one by one`, `cyclic replacement in array`, `use reverse to rotate array by k`
@@ -17,12 +16,14 @@ https://www.geeksforgeeks.org/array-data-structure/#order
 5. `use two pointers for ranging` (1-3. rotation pivot & 1-4. reverse array)
 6. `one-pass hash table for fast lookup time` (1-6. find pair sum)
 7. `(left <= right)` and `return false at end` for binary search (1-7. search element)
+8. (1-8. merge two lists)
 
 #### + Strings
 
 #### + Matrixes
 
 ### 2. Linked List
+1. `delete head: O(1) <-> delete other nodes: O(n)` (2-1. singly linked list)
 5. `how to use two runner for cycle detection` (2-7. cycle detection)
 
 ### 3. Stack
