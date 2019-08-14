@@ -9,8 +9,11 @@
  *    - lookup: O(n) -> linear search
 
  *    - delete: O(1) for HEAD & O(n) for others
- *      - delete head: O(1)
- *      - delete in-between nodes or tail: O(n) -> linear search
+ *      -> delete head: O(1)
+ *      -> delete in-between nodes or tail: O(n) (bcuz linear search included)
+ * 
+ *    - length: O(n) -> linear search
+ * 
  * 
  *  ** What I learned
  * 
@@ -41,7 +44,7 @@
 using namespace std;
 
 /**
- *  define class for linked list
+ *  define class for node
  */
 class Node {
     public:
@@ -54,6 +57,9 @@ class Node {
         }
 };
 
+/**
+ *  define class for singly linked list
+ */
 class SinglyLinkedList {
     public: 
         Node* head;
