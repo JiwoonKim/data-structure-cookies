@@ -27,7 +27,7 @@
 2. `check 2 cases for deletion: delete head & delete others` (2-1. singly linked list & 2-2. doubly linked list)
     - delete head: O(1)
     - delete other nodes: O(n)
-3. `d`
+3. `use two pointers to create n-wide stick` (2-3. find nth node)
 5. `how to use two runner for cycle detection` (2-7. cycle detection)
 
 ### 3. Stack
