@@ -29,9 +29,13 @@
     - delete other nodes: O(n)
 3. `two pointer technique` (2-3. find nth node)
     - `n-wide stick approach` & `turtle and hare approach`
+4. `reverse linked list` (2-4. reverse list)
+    - in-place: `reverse data values` or `reverse ptr directions`
 5. `how to use two runner for cycle detection` (2-7. cycle detection)
 
 ### 3. Stack
+1. 
+2. `reverse order` (2-4. reverse list)
 
 ### 4. Queue
 
