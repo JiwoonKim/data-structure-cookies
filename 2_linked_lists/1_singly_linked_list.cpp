@@ -1,8 +1,9 @@
 /**
- *  Implement a linked list
+ *  Implement a singly linked list
  * 
- *  * Linked list
+ *  * Singly Linked list
  *    : sequence of nodes linked together
+ *      -> can only traverse in one direction
  * 
  *    - append/prepend: O(1) 
  * 
@@ -89,15 +90,14 @@ class SinglyLinkedList {
             // if list is empty, insert at head
             if (!this->head) {
                 this->head = newNode;
-                return;
-            } 
-
-            // if not empty, traverse to last node and insert
-            Node* current = this->head;
-            while (current->next) {
-                current = current->next;
+            } else {
+                // if not empty, traverse to last node and insert
+                Node* current = this->head;
+                while (current->next) {
+                    current = current->next;
+                }
+                current->next = newNode;
             }
-            current->next = newNode;
         }
 
         // search the value of index-th node in list
@@ -151,8 +151,8 @@ class SinglyLinkedList {
         }
 
         // return length of list (= number of nodes)
-        int length() {
-            int count = 0;
+        size_t length() {
+            size_t count = 0;
 
             Node* current = head;
             while (current) {

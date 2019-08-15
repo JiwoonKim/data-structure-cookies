@@ -16,14 +16,18 @@
 5. `use two pointers for ranging` (1-3. rotation pivot & 1-4. reverse array)
 6. `one-pass hash table for fast lookup time` (1-6. find pair sum)
 7. `(left <= right)` and `return false at end` for binary search (1-7. search element)
-8. (1-8. merge two lists)
+8. (1-8. merge two arrays)
 
 #### + Strings
 
 #### + Matrixes
 
 ### 2. Linked List
-1. `delete head: O(1) <-> delete other nodes: O(n)` (2-1. singly linked list)
+1. `define singly-linked list class` & `define doubly-linked list class`  (2-1. singly linked list & 2-2. doubly linked list)
+2. `check 2 cases for deletion: delete head & delete others` (2-1. singly linked list & 2-2. doubly linked list)
+    - delete head: O(1)
+    - delete other nodes: O(n)
+3. `d`
 5. `how to use two runner for cycle detection` (2-7. cycle detection)
 
 ### 3. Stack

@@ -5,7 +5,7 @@
  * 
  *    (1) merge sort: O(n + m) time, O(n + m) extra space
  * 
- *    (2) add and sort: O(n+m log n+m) time, O(n + m) extra space
+ *    (2) append and sort: O(n+m log n+m) time, O(n + m) extra space
  * 
  *    (3) heap sort: 
  * 
@@ -44,7 +44,7 @@ vector<int> mergeTwoArrays(vector<int> nums1, int m, vector<int> nums2, int n) {
 
 
 /**
- *  (2) add and sort
+ *  (2) append and sort
  */
 vector<int> mergeTwoArrays(vector<int> nums1, int m, vector<int> nums2, int n) {
 
