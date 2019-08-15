@@ -17,10 +17,25 @@
  *            -> iterate until end pointer reaches last node
  *            -> the start pointer == n-th last node
  * 
+ *    cf) if problem is finding mid node,
+ *      
+ *        (1) use two pointers (slow & fast): O(n) time, O(1) space
+ *            -> move slow pointer by 1, fast pointer by 2
+ *            -> move until fast pointer reaches last node
+ *            => start pointer == mid node
+ * 
  * 
  *  ** What I learned
  * 
- *  
+ *     ** various ways of utilizing two pointer technique
+ *        a) n-wide stick approach: 
+ *           - move right pointer to (left + n) node
+ *           - move left & right pointer at SAME SPEED
+ * 
+ *        b) turtle & hare approach:
+ *           - move two pointers at DIFFERENT SPEED
+ *             ex) slow pointer by 1, fast pointer (x2)
+ * 
  */
 
 #include <bits/stdc++.h>

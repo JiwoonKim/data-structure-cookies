@@ -1,9 +1,15 @@
 /**
- *  Given a singly linked list and integer n, .
+ *  Given a linked list, reverse the list.
  * 
  *  * Solutions
  * 
- *    (1) 
+ *    * Reverse Singly linked list
+ * 
+ *      (1) 
+ * 
+ * 
+ *    * Reverse Doubly linked list
+ * 
  * 
  *  ** What I learned
  * 
@@ -14,5 +20,9 @@
 using namespace std;
 
 /**
- *  .
+ *  .reverse singly linked list
+ */
+
+/**
+ *  .reverse doubly linked list
  */
