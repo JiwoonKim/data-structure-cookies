@@ -30,8 +30,8 @@
     - delete head: O(1)
     - delete other nodes: O(n)
 3. `two pointer technique` (2-3. find nth node)
-    - n-wide stick approach
-    - turtle and hare approach
+    - `n-wide stick approach`
+    - `turtle and hare approach`
 4. `reverse linked list in-place` (2-4. reverse list :star:)
     - reverse data values
     - reverse ptr directions
