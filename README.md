@@ -34,7 +34,14 @@
 4. `reverse linked list in-place` (2-4. reverse list :star:)
     - `reverse data values`
     - `reverse ptr directions`
-5. `how to use two runner for cycle detection` (2-7. cycle detection :star:)
+5. `merge two linked lists` (2-5. merge two lists :star:)
+    - handle exceptions: `if (!list1) return list2` & `if (!list2) return list1`
+    - use 3 pointers: `lastMerged` + 1 for traversing each list
+    - recursive version: pick smaller node -> connect w/ merged list of rest of nodes
+6. `use dummy node` (2-5. merge two lists)
+    - to avoid separating head case from rest of nodes case
+    - use single code instead of repetitive code
+7. `two runner (turtle and hare) approach for cycle detection` (2-7. cycle detection :star:)
 
 ### 3. Stack
 1. 
