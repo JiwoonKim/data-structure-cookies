@@ -9,11 +9,11 @@
 ### 1. Arrays
 1. `define dynamic array class` (1-1. dynamic array)
 2. `methods for rotating array in-place` (1-2. rotate array :star:)
-    - `shift array by one by one`,
-    - `cyclic replacement in array`, 
-    - `use reverse to rotate array by k`
+    - shift array by one by one
+    - cyclic replacement in array
+    - use reverse to rotate array by k
 3. `binary search for condition to find rotation point` (1-3. rotation pivot :star:)
-    - `rotation point == smallest value's index`
+    - rotation point == smallest value's index
 4. `left shift: end -> begin | right shift: begin -> end` (1-2. rotate array & 1-3. rotation pivot)
 5. `use two pointers for ranging` (1-3. rotation pivot & 1-4. reverse array)
 6. `one-pass hash table for fast lookup time` (1-6. find pair sum)
@@ -30,7 +30,8 @@
     - delete head: O(1)
     - delete other nodes: O(n)
 3. `two pointer technique` (2-3. find nth node)
-    - `n-wide stick approach` & `turtle and hare approach`
+    - `n-wide stick approach`
+    - `turtle and hare approach`
 4. `reverse linked list in-place` (2-4. reverse list :star:)
     - `reverse data values`
     - `reverse ptr directions`
