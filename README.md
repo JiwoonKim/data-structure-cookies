@@ -46,6 +46,8 @@
     - give `head start` for longer runner
     - use two pointers to `cross traverse`: create illusion of same length course
 8. `two runner (turtle and hare) approach for cycle detection` (2-7. cycle detection :star:)
+    - while loop condition: check slowRunner & fastRunner & fastRunner->next
+    - to start both runners at same position (head): `update pointers first` and then check cycle 
 
 ### 3. Stack
 1. 
