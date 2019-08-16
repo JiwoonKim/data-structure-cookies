@@ -9,9 +9,9 @@
 ### 1. Arrays
 1. `define dynamic array class` (1-1. dynamic array)
 2. `methods for rotating array in-place` (1-2. rotate array :star:)
-    - shift array by one by one
-    - cyclic replacement in array
-    - use reverse to rotate array by k
+    - shift array elements one by one
+    - use `cyclic replacement` in array
+    - use `reverse` to rotate array by k
 3. `binary search for condition to find rotation point` (1-3. rotation pivot :star:)
     - rotation point == smallest value's index
 4. `left shift: end -> begin | right shift: begin -> end` (1-2. rotate array & 1-3. rotation pivot)
@@ -30,11 +30,11 @@
     - delete head: O(1)
     - delete other nodes: O(n)
 3. `two pointer technique` (2-3. find nth node)
-    - `n-wide stick approach`
-    - `turtle and hare approach`
+    - use `n-wide stick approach`
+    - use `turtle and hare approach`
 4. `reverse linked list in-place` (2-4. reverse list :star:)
-    - `reverse data values`
-    - `reverse ptr directions`
+    - reverse data values
+    - reverse ptr directions
 5. `merge two linked lists` (2-5. merge two lists :star:)
     - handle exceptions: `if (!list1) return list2` & `if (!list2) return list1`
     - use 3 pointers: `lastMerged` + 1 for traversing each list
@@ -44,7 +44,7 @@
     - creates single code instead of repetitive code
 7. `use length difference to find intersection point` (2-6. find intersection :star:)
     - give `head start` for longer runner
-    - `cross traverse two pointers`: create illusion of same length course
+    - use two pointers to `cross traverse`: create illusion of same length course
 8. `two runner (turtle and hare) approach for cycle detection` (2-7. cycle detection :star:)
 
 ### 3. Stack
