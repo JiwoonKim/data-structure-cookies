@@ -41,8 +41,11 @@
     - recursive version: pick smaller node -> connect w/ merged list of rest of nodes
 6. `use dummy node` (2-5. merge two lists)
     - to avoid separating head case from rest of nodes case
-    - use single code instead of repetitive code
-7. `two runner (turtle and hare) approach for cycle detection` (2-7. cycle detection :star:)
+    - creates single code instead of repetitive code
+7. `use length difference to find intersection point` (2-6. find intersection :star:)
+    - give `head start` for longer runner
+    - `cross traverse two pointers`: create illusion of same length course
+8. `two runner (turtle and hare) approach for cycle detection` (2-7. cycle detection :star:)
 
 ### 3. Stack
 1. 
