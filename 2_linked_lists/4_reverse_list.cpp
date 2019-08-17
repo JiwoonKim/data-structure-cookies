@@ -62,10 +62,6 @@ using namespace std;
  *  (1) swap front to back values (in-place)
  */
 Node* reverseSinglyLinkedList(Node* head) {
-    
-    if (!head) {
-        throw invalid_argument("list is empty");
-    }
 
     // find length of list
     int length = 0;
@@ -101,10 +97,6 @@ Node* reverseSinglyLinkedList(Node* head) {
  *  (2) reverse ptr directions (in-place)
  */
 Node* reverseSinglyLinkedList(Node* head) {
-    
-    if (!head) {
-        throw invalid_argument("list is empty");
-    }
 
     // reverse the pointer directions
     Node* beforeNode = nullptr;
