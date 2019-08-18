@@ -1,9 +1,28 @@
 /**
  *  Implement a stack using a dynamic allocated array
  * 
- *  * 
+ *  * Stack
+ *    : array in LIFO order
+ *      -> can only access top value
+ * 
+ *    - push: amortized O(1) 
+ *            -> worst case O(n) bcuz need to resize
+ *    - pop: O(1) 
+ *    - peek: O(1)
  * 
  *  ** What I learned
+ * 
+ *     * how to implement stack
+ *       (1) create POINTER -> to store space w/ dynamically-allocated array
+ *       (2) record SIZE -> used for size and top value
+ *       (3) record CAPACITY -> used for indicating when to resize (compared w/ size)
+ * 
+ *     * how to use size
+ *       - push: assign new item at stackArr[size] and increase size (size++)
+ *       - pop:  decrease size (size--)
+ *       - access: get top value by stackArr[size - 1]
+ *       => push AT SIZE <-> access BEFORE SIZE (size - 1)
+ * 
 */
 
 #include <bits/stdc++.h>
@@ -27,7 +46,7 @@ class Stack {
         }
 
         // resize method
-        int* resize() {
+        void resize() {
             /** create space for twice the capacity of original
              *  and move all elements to new space
              */
@@ -44,7 +63,7 @@ class Stack {
         // push value into stack
         void push(int value) {
             if (this->size == this->capacity) {
-                this->stackArr = resize();
+                resize();
             }
             this->stackArr[this->size] = value;
             this->size++;
@@ -67,7 +86,7 @@ class Stack {
         }
 
         // return number of elements in stack
-        size_t size() {
+        size_t getSize() {
             return this->size;
         }
 

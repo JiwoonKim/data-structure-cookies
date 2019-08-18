@@ -50,7 +50,7 @@
     - to start both runners at same position (head): `update pointers first` and then check cycle 
 
 ### 3. Stack
-1. 
+1. `define stack class` (3-1. stack)
 2. `reverse order` (2-4. reverse list)
 
 ### 4. Queue
