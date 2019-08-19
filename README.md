@@ -50,9 +50,10 @@
     - to start both runners at same position (head): `update pointers first` and then check cycle 
 
 ### 3. Stack
-1. `define stack class` (3-1. stack)
-2. `use hash table for checking pair matches` (3-2. valid brackets)
-3. `check 3 cases for invalid brackets` (3-2. valid brackets)
+1. `define stack class` (3-1. stack :star:)
+2. (3-2. max stack :star:)
+3. `use hash table for checking pair matches` (3-3. valid brackets :star:)
+4. `check 3 cases for invalid brackets` (3-3. valid brackets)
     - no opening match, no closing match, wrong match
 2. `reverse order` (2-4. reverse list)
 

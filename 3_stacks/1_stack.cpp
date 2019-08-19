@@ -10,6 +10,7 @@
  *    - pop: O(1) 
  *    - peek: O(1)
  * 
+ * 
  *  ** What I learned
  * 
  *     * how to implement stack
@@ -28,8 +29,8 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-/**
- *  define class for stack
+/** define class for stack
+ *  (using an array)
  */
 class Stack {
     private:
@@ -91,6 +92,68 @@ class Stack {
         }
 
         // check if stack is empty or not
+        bool isEmpty() {
+            if (this->size == 0) return true;
+            return false;
+        }
+};
+
+/** define class for stack
+ *  (using a linked list)
+ */
+class Stack {
+    private:
+        Node* top;
+        size_t size;
+
+    public:
+        // constructor method
+        Stack() {
+            top = nullptr;
+            size = 0;
+        }
+
+        /** push value into stack
+         *  (= insert at head of linked list)
+         */ 
+        void push(int value) {
+            // insert new node at front
+            Node* newNode = new Node(value);
+            newNode->next = this->top;
+
+            // update new head and size
+            this->top = newNode;
+            this->size++;
+        }
+
+        /** pop value from stack
+         *  (= delete head node of linked list)
+         */ 
+        void pop() {
+            if (!this->size) {
+                throw invalid_argument("cannot pop from empty stack");
+            }
+            // update head and delete prev head
+            Node* NodeToDelete = this->top;
+            this->top = this->top->next;
+            delete NodeToDelete;
+
+            // update size
+            this->size++;
+        }
+
+        // return top value
+        int top() {
+            if (!this->size) {
+                throw invalid_argument("stack is empty!");
+            }
+            return this->top->data;
+        }
+
+        size_t getSize() {
+            return this->size;
+        }
+
         bool isEmpty() {
             if (this->size == 0) return true;
             return false;
