@@ -67,7 +67,7 @@ bool search(vector<int> v, int k) {
     return false;
 }
 
-/** (2-b) binary search: ITERATIVE version
+/** (2-b) binary search: RECURSIVE version
  *        (based on assumption that array is sorted)
  */
 bool search(vector<int> v, int left, int right, int k) {

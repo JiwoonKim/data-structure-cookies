@@ -33,6 +33,11 @@
  *                             => have to use LONG LONG instead
  *                                : O(1) time, O(n) extra space (actually n * 4 bytes added)
  * 
+ *    (4) Doubly linked list + TreeMap: O(log n) time, O(n) extra space
+ *        - if popMax() is included in the problem,
+ *          implementing the stack using a doubly-linked list and tree map structure
+ *          will help improve the time complexity for removal
+ * 
  * 
  *  ** What I learned
  * 

@@ -1,5 +1,5 @@
 /**
- *  Im
+ *  Implement two stacks using a single array.
  * 
  *  * Solution
  * 

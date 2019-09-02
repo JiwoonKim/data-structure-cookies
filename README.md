@@ -22,6 +22,7 @@
 
 #### + Strings
 
+
 #### + Matrixes
 
 ### 2. Linked List
@@ -52,9 +53,13 @@
 ### 3. Stack
 1. `define stack class` (3-1. stack :star:)
 2. (3-2. max stack :star:)
-3. `use hash table for checking pair matches` (3-3. valid brackets :star:)
+3. `use stack for checking matching pairs` (3-3. valid brackets :star:)
+    - predefine pairs using `unordered_set & map`
 4. `check 3 cases for invalid brackets` (3-3. valid brackets)
     - no opening match, no closing match, wrong match
+5. `pop all equal or lower priority operators` (3-4. postfix expression)
+    - use while loop to pop those w/ specific conditions
+    - predefine precedence using helper function
 2. `reverse order` (2-4. reverse list)
 
 ### 4. Queue
