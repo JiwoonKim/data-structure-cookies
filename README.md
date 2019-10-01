@@ -60,7 +60,8 @@
 5. `pop all equal or lower priority operators` (3-4. postfix expression)
     - use while loop to pop those w/ specific conditions
     - predefine precedence using helper function
-2. `reverse order` (2-4. reverse list)
+6. 
+7. `reverse order` (2-4. reverse list)
 
 ### 4. Queue
 

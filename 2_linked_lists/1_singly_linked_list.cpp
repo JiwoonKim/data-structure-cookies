@@ -50,7 +50,7 @@ using namespace std;
 class Node {
     public:
         int data;
-        Node* next = nullptr;
+        Node* next;
 
         Node(int data) {
             this->data = data;
