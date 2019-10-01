@@ -24,6 +24,7 @@
 
 
 #### + Matrixes
+rotate matrix
 
 ### 2. Linked List
 1. `define singly-linked list class` & `define doubly-linked list class`  (2-1. singly linked list & 2-2. doubly linked list)
@@ -60,8 +61,8 @@
 5. `pop all equal or lower priority operators` (3-4. postfix expression)
     - use while loop to pop those w/ specific conditions
     - predefine precedence using helper function
-6. 
-7. `reverse order` (2-4. reverse list)
+6. `use 2 stacks for undo & redo action` (3-5. simple text editor :star:)
+7. `use stack to reverse order` (2-4. reverse list)
 
 ### 4. Queue
 
