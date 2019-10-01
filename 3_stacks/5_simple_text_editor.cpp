@@ -106,10 +106,9 @@ string editText(string s, vector<string> commands) {
         // insert new char at cursor
         if (command[0] == 'I') {
             ll.insert(cursor, command[2]);
-            cursor++;
         }
         // delete char at cursor
-        if (command[0] == 'D' && !ll.empty()) {
+        if (command[0] == 'D' && cursor != ll.begin()) {
             auto temp = cursor;
             temp--;
             ll.erase(temp);
