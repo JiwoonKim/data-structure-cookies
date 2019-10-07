@@ -32,6 +32,10 @@
  *        - UNDO: pop top action (to another stack) and revert back to last action
  *        - REDO: push back action (kept in the other stack)
  * 
+ *       => useful for implementing:
+ *          - Editor(w/ cursor)
+ *          - BACK/FORTH HISTORY
+ * 
 */
 
 #include <bits/stdc++.h>

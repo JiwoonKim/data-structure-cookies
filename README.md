@@ -53,16 +53,19 @@ rotate matrix
 
 ### 3. Stack
 1. `define stack class` (3-1. stack :star:)
-2. (3-2. max stack :star:)
-3. `use stack for checking matching pairs` (3-3. valid brackets :star:)
+2. `implement k stacks w/ single array` (3-2. two stacks with array)
+3. `use stack to reverse order` (2-4. reverse list && 3-3. reverse stack)
+4. `sort` (2-)
+5. (3-2. max stack :star:)
+6. (3-6. queue with two stacks)
+7. `use stack for checking matching pairs` (3-7. valid brackets :star:)
     - predefine pairs using `unordered_set & map`
-4. `check 3 cases for invalid brackets` (3-3. valid brackets)
+8. `check 3 cases for invalid brackets` (3-7. valid brackets)
     - no opening match, no closing match, wrong match
-5. `pop all equal or lower priority operators` (3-4. postfix expression)
+9. `pop all equal or lower priority operators` (3-8. postfix expression)
     - use while loop to pop those w/ specific conditions
     - predefine precedence using helper function
-6. `use 2 stacks for undo & redo action` (3-5. simple text editor :star:)
-7. `use stack to reverse order` (2-4. reverse list)
+10. `use 2 stacks for undo & redo action` (3-9. simple text editor :star:)
 
 ### 4. Queue
 
