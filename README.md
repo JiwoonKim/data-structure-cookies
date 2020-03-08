@@ -27,7 +27,7 @@
 rotate matrix
 
 ### 2. Linked List
-1. `define singly-linked list class` & `define doubly-linked list class`  ([2-1. singly linked list](https://github.com/JiwoonKim/data-structure-cookies/blob/master/2_linked_lists/1_singly_linked_list.cpp) & 2-2. doubly linked list)
+1. `define singly-linked list class` & `define doubly-linked list class`  ([2-1. singly linked list](https://github.com/JiwoonKim/data-structure-cookies/blob/master/2_linked_lists/1_singly_linked_list.cpp) & [2-2. doubly linked list](https://github.com/JiwoonKim/data-structure-cookies/blob/master/2_linked_lists/2_doubly_linked_list.cpp))
 2. `check 2 cases for deletion: delete head & delete others` ([2-1. singly linked list](https://github.com/JiwoonKim/data-structure-cookies/blob/master/2_linked_lists/1_singly_linked_list.cpp) & [2-2. doubly linked list](https://github.com/JiwoonKim/data-structure-cookies/blob/master/2_linked_lists/2_doubly_linked_list.cpp) :star:)
     - delete head: O(1)
     - delete other nodes: O(n)
@@ -52,20 +52,20 @@ rotate matrix
     - to start both runners at same position (head): `update pointers first` and then check cycle 
 
 ### 3. Stack
-1. `define stack class` (3-1. stack :star:)
-2. `implement k stacks w/ single array` (3-2. two stacks with array)
-3. `use stack to reverse order` (2-4. reverse list && 3-3. reverse stack)
-4. `sort` (2-)
-5. (3-2. max stack :star:)
-6. (3-6. queue with two stacks)
-7. `use stack for checking matching pairs` (3-7. valid brackets :star:)
+1. `define stack class` ([3-1. stack](https://github.com/JiwoonKim/data-structure-cookies/blob/master/3_stacks/1_stack.cpp) :star:)
+2. `implement k stacks w/ single array` ([3-2. two stacks with array](https://github.com/JiwoonKim/data-structure-cookies/blob/master/3_stacks/2_two_stacks_with_array.cpp))
+3. `use stack to reverse order` (2-4. reverse list && [3-3. reverse stack](https://github.com/JiwoonKim/data-structure-cookies/blob/master/3_stacks/3_reverse_stack.cpp))
+4. `sort` ([3-4. sort using stack](https://github.com/JiwoonKim/data-structure-cookies/blob/master/3_stacks/4_sort_using_stack.cpp))
+5. ([3-2. max stack](https://github.com/JiwoonKim/data-structure-cookies/blob/master/3_stacks/5_max_stack.cpp) :star:)
+6. ([3-6. queue with two stacks](https://github.com/JiwoonKim/data-structure-cookies/blob/master/3_stacks/5_max_stack.cpp))
+7. `use stack for checking matching pairs` ([3-7. valid brackets](https://github.com/JiwoonKim/data-structure-cookies/blob/master/3_stacks/7_valid_brackets.cpp) :star:)
     - predefine pairs using `unordered_set & map`
-8. `check 3 cases for invalid brackets` (3-7. valid brackets)
+8. `check 3 cases for invalid brackets` ([3-7. valid brackets](https://github.com/JiwoonKim/data-structure-cookies/blob/master/3_stacks/7_valid_brackets.cpp))
     - no opening match, no closing match, wrong match
-9. `pop all equal or lower priority operators` (3-8. postfix expression)
+9. `pop all equal or lower priority operators` ([3-8. postfix expression](https://github.com/JiwoonKim/data-structure-cookies/blob/master/3_stacks/8_postfix_expression.cpp))
     - use while loop to pop those w/ specific conditions
     - predefine precedence using helper function
-10. `use 2 stacks for undo & redo action` (3-9. simple text editor :star:)
+10. `use 2 stacks for undo & redo action` ([3-9. simple text editor](https://github.com/JiwoonKim/data-structure-cookies/blob/master/3_stacks/9_simple_text_editor.cpp) :star:)
 
 ### 4. Queue
 
