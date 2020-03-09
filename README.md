@@ -53,7 +53,8 @@ rotate matrix
 
 ### 3. Stack
 1. `define stack class` ([3-1. stack](https://github.com/JiwoonKim/data-structure-cookies/blob/master/3_stacks/1_stack.cpp) :star:)
-2. `implement k stacks w/ single array` ([3-2. two stacks with array](https://github.com/JiwoonKim/data-structure-cookies/blob/master/3_stacks/2_two_stacks_with_array.cpp))
+2. `simulate linked list to implement k stacks w/ single array` ([3-2. two stacks with array](https://github.com/JiwoonKim/data-structure-cookies/blob/master/3_stacks/2_two_stacks_with_array.cpp))
+    - use an extra array to track links of `prev` for `next` simultaneously
 3. `use stack to reverse order` (2-4. reverse list && [3-3. reverse stack](https://github.com/JiwoonKim/data-structure-cookies/blob/master/3_stacks/3_reverse_stack.cpp))
 4. `sort` ([3-4. sort using stack](https://github.com/JiwoonKim/data-structure-cookies/blob/master/3_stacks/4_sort_using_stack.cpp))
 5. ([3-2. max stack](https://github.com/JiwoonKim/data-structure-cookies/blob/master/3_stacks/5_max_stack.cpp) :star:)
